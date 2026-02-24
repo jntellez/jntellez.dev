@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  
+  --font-serif: "Newsreader", serif;
+  --font-sans: "Geist", "Geist Sans", sans-serif;
+
+  --radius-*: initial;
+}
