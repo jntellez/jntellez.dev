@@ -1,6 +1,7 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import ThemeToggle from "@/components/ThemeToggle.astro";
+import { Icon } from "astro-icon/components";
 import es from "@/i18n/es.json";
 
 const t = es;
@@ -10,12 +11,14 @@ const projects = ["glass-ui", "html-to-image", "pixie", "documind"];
 <Layout lang="es" title="Juan Téllez | jntellez.dev">
   <header class="mt-20 flex justify-between items-center">
     <h1 class="text-3xl font-serif font-bold italic">Juan Téllez</h1>
-    <div class="flex gap-4">
+    <div class="flex gap-2">
       <a
         href="/en/"
-        class="border border-black dark:border-white px-4 py-2 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black"
+        class="w-10 h-10 flex items-center justify-center hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black"
+        aria-label="Cambiar a Inglés"
+        title={t["nav.lang"]}
       >
-        {t["nav.lang"]}
+        <Icon name="lucide:globe" size={20} />
       </a>
       <ThemeToggle />
     </div>
