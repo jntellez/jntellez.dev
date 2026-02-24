@@ -1,0 +1,8 @@
+{
+  "nav.lang": "es",
+  "hero.title": "I am a Fullstack developer specializing in web technologies. I have experience building complete projects from scratch. I love using modern technologies and taking maximum care of the user experience.",
+  "projects.title": "Projects",
+  "projects.view": "View project &rarr;",
+  "stack.title": "Skills",
+  "stack.items": "Astro, Tailwind CSS, TypeScript, React"
+}

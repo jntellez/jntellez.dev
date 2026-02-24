@@ -1,18 +1,18 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import ThemeToggle from "../components/ThemeToggle.astro";
-import es from "../i18n/es.json";
+import Layout from "../../layouts/Layout.astro";
+import ThemeToggle from "../../components/ThemeToggle.astro";
+import en from "../../i18n/en.json";
 
-const t = es;
+const t = en;
 const projects = ["glass-ui", "html-to-image", "pixie", "documind"];
 ---
 
-<Layout lang="es" title="Juan Téllez | jntellez.dev">
+<Layout lang="en" title="Juan Téllez | jntellez.dev">
   <header class="mt-20 flex justify-between items-center">
     <h1 class="text-3xl font-serif font-bold italic">Juan Téllez</h1>
     <div class="flex gap-4">
       <a
-        href="/en/"
+        href="/"
         class="border border-black dark:border-white px-4 py-2 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black"
       >
         {t["nav.lang"]}

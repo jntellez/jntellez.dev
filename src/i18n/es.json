@@ -2,6 +2,7 @@
   "nav.lang": "en",
   "hero.title": "Soy un desarrollador Fullstack especializado en tecnologías web, tengo experiencia desarrollando proyectos completos desde cero. Me encanta usar tecnologías modernas y cuidar al máximo la experiencia de usuario.",
   "projects.title": "Proyectos",
+  "projects.view": "Ver proyecto &rarr;",
   "stack.title": "Habilidades",
   "stack.items": "Astro, Tailwind CSS, TypeScript, React"
 }
