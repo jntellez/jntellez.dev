@@ -12,6 +12,7 @@ const projects = [
       "Sistema de diseño moderno y personalizable basado en glassmorphism.",
     url: "https://ui-glass.vercel.app",
     tecnologies: "Turborepo, React, Astro, Tailwind CSS.",
+    githubUrl: "https://github.com/jntellez/glass-ui",
   },
   {
     name: "html-to-image",
@@ -19,6 +20,7 @@ const projects = [
       "Playground interactivo para convertir código HTML/CSS en imágenes.",
     url: "https://htmltoimage3.vercel.app",
     tecnologies: "React, Vite, shadcn/ui.",
+    githubUrl: "https://github.com/jntellez/html-to-image",
   },
   {
     name: "pixie",
@@ -26,6 +28,7 @@ const projects = [
       "Un acortador de enlaces moderno, rápido y enfocado en la experiencia de usuario.",
     url: "https://pixie-link.vercel.app",
     tecnologies: "Next.js, Prisma, PostgreSQL.",
+    githubUrl: "https://github.com/jntellez/pixie",
   },
   {
     name: "documind",
@@ -33,6 +36,7 @@ const projects = [
       "App móvil de productividad que organiza y simplifica contenido web y documentos.",
     url: "https://github.com/jntellez/documind",
     tecnologies: "React Native, Expo, Hono.",
+    githubUrl: "https://github.com/jntellez/documind",
   },
 ];
 ---
@@ -89,32 +93,33 @@ const projects = [
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {
           projects.map((project) => (
-            <a
-              href={project.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="border border-black dark:border-white p-6 flex flex-col justify-between hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors group cursor-pointer"
-            >
-              <div class="mb-1">
-                <div class="flex items-center justify-between">
-                  <div class="flex items-center gap-2">
-                    <h4 class="text-2xl font-serif font-semibold italic">
-                      {project.name}
-                    </h4>
-                    <Icon name="lucide:arrow-up-right" size={15} />
-                  </div>
-                  <Icon
-                    name="simple-icons:github"
-                    size={20}
-                    class="opacity-0 group-hover:opacity-100 transition-opacity"
-                  />
-                </div>
-                <p class="mt-2 text-sm">{project.description}</p>
-                <p class="mt-3.5 italic font-serif font-semibold text-sm">
-                  {project.tecnologies}
-                </p>
+            <div class="border border-black dark:border-white p-6 pb-7 flex flex-col group">
+              <div class="flex items-center justify-between">
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center gap-2 hover:underline dark:hover:text-blue-700 hover:text-blue-600"
+                >
+                  <h4 class="text-2xl font-serif font-semibold italic">
+                    {project.name}
+                  </h4>
+                  <Icon name="lucide:arrow-up-right" size={15} />
+                </a>
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="opacity-0 group-hover:opacity-100 transition-opacity dark:hover:text-blue-700 hover:text-blue-600"
+                >
+                  <Icon name="simple-icons:github" size={20} />
+                </a>
               </div>
-            </a>
+              <p class="mt-2 text-sm">{project.description}</p>
+              <p class="mt-3.5 italic font-serif font-semibold text-sm">
+                {project.tecnologies}
+              </p>
+            </div>
           ))
         }
       </div>
