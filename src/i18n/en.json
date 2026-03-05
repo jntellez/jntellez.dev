@@ -1,11 +1,12 @@
 {
   "nav.lang": "es",
-  "hero.title": "I am a Fullstack developer specializing in web technologies. I have experience building complete projects from scratch. I love using modern technologies and taking maximum care of the user experience.",
+  "hero.title": "I'm a Fullstack developer specializing in web technologies, with experience building complete projects from scratch. I love using modern technologies and taking maximum care of the user experience.",
+  "hero.contact": "Send me a message",
   "projects.title": "Projects",
-  "projects.view": "View project &rarr;",
   "stack.title": "Technologies",
   "stack.frontend": "Frontend",
   "stack.backend": "Backend",
   "stack.databases": "Databases",
-  "stack.tools": "Tools"
+  "stack.tools": "Tools",
+  "footer.downloadcv": "Download CV"
 }

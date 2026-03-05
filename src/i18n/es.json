@@ -1,11 +1,12 @@
 {
   "nav.lang": "en",
-  "hero.title": "Soy un desarrollador Fullstack especializado en tecnologías web, tengo experiencia desarrollando proyectos completos desde cero. Me encanta usar tecnologías modernas y cuidar al máximo la experiencia de usuario.",
+  "hero.title": "Soy desarrollador fullstack especializado en tecnologías web, tengo experiencia desarrollando proyectos completos desde cero. Me encanta usar tecnologías modernas y cuidar la experiencia de usuario.",
+  "hero.contact": "Envíame un mensaje",
   "projects.title": "Proyectos",
-  "projects.view": "Ver proyecto &rarr;",
   "stack.title": "Tecnologías",
   "stack.frontend": "Frontend",
   "stack.backend": "Backend",
   "stack.databases": "Bases de Datos",
-  "stack.tools": "Herramientas"
+  "stack.tools": "Herramientas",
+  "footer.downloadcv": "Descargar CV"
 }
