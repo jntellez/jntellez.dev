@@ -82,6 +82,13 @@ const projects = [
       <p class="text-lg md:text-base leading-7">
         {t["hero.title"]}
       </p>
+      <a
+        href="mailto:juantellez916@gmail.com"
+        class="inline-flex items-center gap-1 hover:underline dark:hover:text-blue-700 hover:text-blue-600"
+      >
+        <p class="text-[15px] italic">{t["hero.contact"]}</p>
+        <Icon name="lucide:arrow-up-right" size={14} />
+      </a>
     </section>
 
     <section>
@@ -180,4 +187,20 @@ const projects = [
       </div>
     </section>
   </main>
+
+  <footer class="text-[15px] py-2 mt-20">
+    <div class="flex justify-between">
+      <a
+        href="/juan-tellez-cv.pdf"
+        download
+        class="flex items-center gap-1 hover:underline dark:hover:text-blue-700 hover:text-blue-600"
+      >
+        <p>
+          {t["footer.downloadcv"]}
+        </p>
+        <Icon name="lucide:arrow-up-right" size={14} />
+      </a>
+      <p class="">jntellez {new Date().getFullYear()}</p>
+    </div>
+  </footer>
 </Layout>
