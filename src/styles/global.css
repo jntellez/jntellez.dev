@@ -11,3 +11,13 @@
 
   --radius-*: initial;
 }
+
+/* Scrollbar */
+:root {
+  scrollbar-width: thin;
+  scrollbar-color: #000 transparent;
+}
+
+html.dark {
+  scrollbar-color: #fff transparent;
+}
