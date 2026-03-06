@@ -1,0 +1,18 @@
+---
+import { Icon } from "astro-icon/components";
+
+const { t } = Astro.props;
+---
+
+<section class="space-y-4">
+  <p class="text-base leading-7">
+    {t["hero.title"]}
+  </p>
+  <a
+    href="mailto:juantellez916@gmail.com"
+    class="inline-flex items-center gap-1 hover:underline dark:hover:text-blue-700 hover:text-blue-600"
+  >
+    <p class="text-[15px] italic">{t["hero.contact"]}</p>
+    <Icon name="lucide:arrow-up-right" size={14} />
+  </a>
+</section>

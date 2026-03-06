@@ -1,0 +1,41 @@
+---
+import ThemeToggle from "@/components/ThemeToggle.astro";
+import { Icon } from "astro-icon/components";
+
+const { t, langUrl } = Astro.props;
+---
+
+<header class="md:mt-16 flex justify-between items-center">
+  <h1 class="text-3xl font-serif font-bold italic">Juan Téllez</h1>
+  <div class="flex gap-2 md:gap-2.5">
+    <a
+      href="https://linkedin.com/in/jntellez"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="w-8 h-8 flex items-center justify-center dark:hover:text-blue-700 hover:text-blue-600"
+      aria-label="LinkedIn"
+      title="LinkedIn"
+    >
+      <Icon name="simple-icons:linkedin" size={20} />
+    </a>
+    <a
+      href="https://github.com/jntellez"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="w-8 h-8 flex items-center justify-center dark:hover:text-blue-700 hover:text-blue-600"
+      aria-label="GitHub"
+      title="GitHub"
+    >
+      <Icon name="simple-icons:github" size={20} />
+    </a>
+    <a
+      href={langUrl}
+      class="w-8 h-8 flex items-center justify-center dark:hover:text-blue-700 hover:text-blue-600"
+      aria-label="Cambiar a Inglés"
+      title={t["nav.lang"]}
+    >
+      <Icon name="lucide:globe" size={20} />
+    </a>
+    <ThemeToggle />
+  </div>
+</header>

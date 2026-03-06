@@ -1,0 +1,27 @@
+---
+import { projects } from "@/data/projects";
+import ProjectCard from "@/components/ProjectCard.astro";
+
+const { t } = Astro.props;
+---
+
+<section>
+  <h3
+    class="text-3xl font-serif font-medium italic border-b border-black dark:border-white mb-6 pb-2"
+  >
+    {t["projects.title"]}
+  </h3>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+    {
+      projects.map(({ url, githubUrl, name, i18nKey, technologies }) => (
+        <ProjectCard
+          url={url}
+          githubUrl={githubUrl}
+          name={name}
+          description={t[i18nKey]}
+          technologies={technologies}
+        />
+      ))
+    }
+  </div>
+</section>

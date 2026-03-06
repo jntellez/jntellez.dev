@@ -1,0 +1,27 @@
+---
+import { stack } from "@/data/stack";
+
+const { t } = Astro.props;
+---
+
+<section>
+  <h3
+    class="text-3xl font-serif font-medium italic border-b border-black dark:border-white mb-6 pb-2"
+  >
+    {t["stack.title"]}
+  </h3>
+  <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 italic">
+    {
+      stack.map(({ key, items }) => (
+        <div>
+          <h4 class="text-lg font-serif italic font-bold mb-3">{t[key]}</h4>
+          <ul class="space-y-2 text-sm">
+            {items.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+        </div>
+      ))
+    }
+  </div>
+</section>
