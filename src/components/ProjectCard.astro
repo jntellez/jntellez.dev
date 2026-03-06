@@ -1,22 +1,17 @@
 ---
 import { Icon } from "astro-icon/components";
+import ExternalLink from "@/components/ExternalLink.astro";
 
 const { url, githubUrl, name, description, technologies } = Astro.props;
 ---
 
 <div class="border border-black dark:border-white p-6 pb-7 flex flex-col group">
   <div class="flex items-center justify-between">
-    <a
-      href={url}
-      target="_blank"
-      rel="noopener noreferrer"
-      class="flex items-center gap-2 hover:underline dark:hover:text-blue-700 hover:text-blue-600"
-    >
+    <ExternalLink href={url} class="gap-2">
       <h4 class="text-2xl font-serif font-semibold italic">
         {name}
       </h4>
-      <Icon name="lucide:arrow-up-right" size={15} />
-    </a>
+    </ExternalLink>
     <a
       href={githubUrl}
       target="_blank"

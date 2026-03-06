@@ -1,21 +1,16 @@
 ---
-import { Icon } from "astro-icon/components";
+import ExternalLink from "@/components/ExternalLink.astro";
 
 const { t } = Astro.props;
 ---
 
 <footer class="text-[15px] py-2 mt-16">
   <div class="flex justify-between">
-    <a
-      href="/juan-tellez-cv.pdf"
-      download
-      class="flex items-center gap-1 hover:underline dark:hover:text-blue-700 hover:text-blue-600"
-    >
+    <ExternalLink href="/juan-tellez-cv.pdf" download>
       <p>
         {t["footer.downloadcv"]}
       </p>
-      <Icon name="lucide:arrow-up-right" size={14} />
-    </a>
+    </ExternalLink>
     <p>jntellez {new Date().getFullYear()}</p>
   </div>
 </footer>
