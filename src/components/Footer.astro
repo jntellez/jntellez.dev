@@ -6,7 +6,7 @@ const { t } = Astro.props;
 
 <footer class="text-[15px] py-2 mt-16">
   <div class="flex justify-between">
-    <ExternalLink href="/juan-tellez-cv.pdf" download>
+    <ExternalLink href={t["footer.cvUrl"]}>
       <p>
         {t["footer.downloadcv"]}
       </p>

@@ -12,5 +12,6 @@
   "stack.backend": "Backend",
   "stack.databases": "Bases de Datos",
   "stack.tools": "Herramientas",
-  "footer.downloadcv": "Descargar CV"
+  "footer.downloadcv": "Descargar CV",
+  "footer.cvUrl": "https://drive.google.com/uc?export=download&id=1tcCFehzSsuGIwOnxiXy4EZsHp8x-0aa6"
 }
