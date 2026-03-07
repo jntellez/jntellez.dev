@@ -5,7 +5,9 @@ import ExternalLink from "@/components/ExternalLink.astro";
 const { url, githubUrl, name, description, technologies } = Astro.props;
 ---
 
-<div class="border border-black dark:border-white p-6 pb-7 flex flex-col group">
+<div
+  class="border border-black dark:border-white p-5 md:p-6 flex flex-col group"
+>
   <div class="flex items-center justify-between">
     <ExternalLink href={url} class="gap-2">
       <h4 class="text-2xl font-serif font-semibold italic">
