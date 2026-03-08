@@ -6,9 +6,9 @@
   <img src="public/web-ss.png" alt="jntellez.dev" />
 </a>
 
-My personal website - fullstack developer specializing in web technologies.
-
 [Visit site](https://jntellez.dev/en) • [Versión en español](https://jntellez.dev)
+
+My personal website - fullstack developer specializing in web technologies.
 
 </div>
 
