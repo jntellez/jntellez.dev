@@ -31,7 +31,7 @@ export const projects: Project[] = [
   {
     name: "documind",
     i18nKey: "projects.documind",
-    url: "https://github.com/jntellez/documind",
+    url: "https://documind-official.vercel.app",
     technologies: "React Native, Expo, Hono.",
     githubUrl: "https://github.com/jntellez/documind",
   },
